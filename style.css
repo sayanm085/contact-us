@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+ 
+}
+body{
+    height: 6000px;
+    background-image: url(./image/pexels-kyle-roxas-2138922.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    
+}
+.maincontact{
+    max-width: 990px ;
+    height: 1000px;
+   padding: 0 20px;
+    margin: 120px auto;
+    
+}
+.contactbox{
+    height: 430px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.589);
+    display: flex;
+    justify-content:space-around;
+}
+
+.myinfo{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.myinfo::before{
+    content: "";
+   position: absolute;
+    height: 300px;
+    width:2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transform: translateX(120px);
+    background-color: #13002536;
+
+}
+
+.map{
+    width: 80%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.p1{
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.703);
+}
+
+.castomar{
+    height: 100%;
+    width: 630px;
+    padding-top: 19px;
+   padding-left: 20px;
+   padding-right: 10px;
+}
+.castomar h2{
+    color:#8a2be2;
+    font-size: 1.75rem;
+}
+.castomar p{
+    font-size: 0.83rem;
+}
+.castomar form{
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.castomar form input{
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: #cfe1f1;
+    border: 2px solid transparent;
+}
+#massage{
+    height: 120px;
+    padding-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: #cfe1f1;
+    resize: none;
+}
+#submit{
+    background-color: #8a2be2;
+    color: aliceblue;
+    font-size: 0.9rem;
+    width: 100px;
+    padding-left: 0px; 
+}
+#submit:hover{
+    background-color: #ab03ff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.347);
+}
+.heading{
+    color: #30015b;
+}
+.logo{
+    color: #8a2be2;
+    font-size: 2.1rem;
+}
+
+
+@media (max-width:950px){
+    .contactbox{
+        width: 90%;
+        height: 450px;
+        padding: 30px 35px 40px 35px;
+    }
+    .myinfo::before{
+        content: "";
+       position: absolute;
+        height: 48%;
+        width:2px;
+        margin-left: 5px;
+        margin-right: 5px;
+        transform: translateX(90px);
+        background-color: #13002536;
+    
+    }
+    
+    .p1{
+        font-size: 0.69rem;
+    }
+    .logo{
+        color: #8a2be2;
+        font-size: 1.6rem;
+    }
+    
+
+}
+
+
+@media (max-width:793px ){
+    .contactbox{
+        width: 90%;
+        margin: 20px 0;
+        height: 450px;
+        padding: 5px 2px 0px 5px;
+        
+    }
+    .myinfo::before{
+        content: "";
+       position: absolute;
+        height: 35%;
+        width:2px;
+        margin-left: 5px;
+        margin-right: 5px;
+        transform: translateX(80px);
+        background-color: #13002536;
+    
+    }
+    .map{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .p1{
+        font-size: 0.69rem;
+    }
+    .logo{
+        color: #8a2be2;
+        font-size: 1.6rem;
+    }
+    
+
+}
+@media (max-width:752px ){
+    .contactbox{
+       position: absolute;
+       bottom: 10px;
+       height: 600px;
+       display: flex;
+       flex-direction: column-reverse;
+    }
+    .myinfo{
+       width: 100%; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .map{
+        position: relative;
+        top: 7px;
+    }
+    .address{
+        width: 150px;
+       padding: 0px;
+        font-size: 0.85rem;
+
+        
+    }
+    .myinfo::before{
+        content: "";
+       position: absolute;
+        height: 0%;
+        width:0px;
+       margin: 0px;
+        transform: translateX(80px);
+        background-color: #13002536;
+        
+    
+    }
+    .castomar{
+        height: 100%;
+    width: 100%;
+    padding-top: 19px;
+   padding-left: 20px;
+   padding-right: 10px;
+    }
+    
+    
+    .castomar p{
+        font-size: 0.79rem;
+    }
+    
+
+}
+
+
+
+@media (max-width:579px ){
+    .maincontact{
+        position: relative;
+        bottom: 450px;
+    }
+    .contactbox{
+        position: absolute;
+        bottom: 10px;
+        height: 620px;
+        display: flex;
+    
+        flex-direction: column-reverse;
+     }
+
+    .myinfo{
+        position: relative;
+        bottom: 70px;
+        height: auto;
+        width: auto;
+        flex-wrap: wrap;
+       
+    }
+    .address{
+        width: 160px;
+       padding: 0px;
+       
+        font-size: 0.65rem;
+        
+    }
+    .email p {
+        margin-top: 10px;
+
+    }
+
+}
+
+@media (max-width:433px ){
+    .contactbox{
+        position: absolute;
+        height: 630px;
+        display: flex;
+        flex-direction: column-reverse;
+     }
+
+     .castomar{
+        margin-top: 20px;
+        width: 100%;
+     }
+     .castomar h2{
+        font-size: 1.2rem;
+     }
+     .castomar p{
+        font-size: 0.8rem;
+     }
+     #massage{
+        height: 70px;
+        padding-left: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        background-color: #cfe1f1;
+        resize: none;
+      }
+
+
+      .myinfo{
+        position: relative;
+        bottom: 50px;
+        height: auto;
+        width: auto;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+       
+    }
+    .address{
+        margin-top: 15px;
+    }
+
+}
+    
+
